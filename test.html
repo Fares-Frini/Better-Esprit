@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="SHORTCUT ICON" href="../images/espr.ico" />
+    <title> </title>
+    <link
+      href="../Contents/Css/bootstrap-theme.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../Contents/Css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../Contents/Css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../Contents/jquery/css/blitzer/jquery-ui-1.10.3.custom.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="../Contents/jquery/js/jquery-1.9.1.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../Contents/jquery/js/jquery-ui-1.10.3.custom.min.js"
+      type="text/javascript"
+    ></script>
+
+    <style type="text/css">
+      .nav-pills > li.active > a,
+      .nav-pills > li.active > a:hover,
+      .nav-pills > li.active > a:focus {
+        color: #ffffff;
+        background-color: #d00000;
+      }
+      .style1 {
+        color: #000000;
+      }
+    </style>
+
+    <style>
+      html,
+      body {
+        background-color: #a8a8a8;
+        height: 100%;
+      }
+      a,
+      a:visited {
+        color: #000000;
+      }
+      #bannerImg {
+        float: left;
+      }
+      footer {
+        color: #666;
+        background: #222;
+        padding: 17px 0 18px 0;
+        border-top: 1px solid #000;
+      }
+      footer a {
+        color: #999;
+      }
+      footer a:hover {
+        color: #efefef;
+      }
+      .wrapper {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        margin: 0 auto -63px;
+      }
+      .push {
+        height: 63px;
+      }
+      /* not required for sticky footer; just pushes hero down a bit */
+      .wrapper > .container {
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      method="post"
+      action="./default.aspx"
+      onsubmit="javascript:return WebForm_OnSubmit();"
+      id="form1"
+    >
+      <div class="aspNetHidden">
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input
+          type="hidden"
+          name="__EVENTARGUMENT"
+          id="__EVENTARGUMENT"
+          value=""
+        />
+        <input
+          type="hidden"
+          name="__VIEWSTATE"
+          id="__VIEWSTATE"
+          value="/wEPDwUJNDE1NjEwODA3D2QWAmYPZBYCAgMPZBYCAgUPDxYCHgRUZXh0BQkyMDIyLzIwMjNkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUSY3RsMDAkSW1hZ2VCdXR0b24xxpkt0f51xQXoascgQcmOLavg9JVuTH+6bPlrbtOGqgc="
+        />
+      </div>
+
+      <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms["form1"];
+        if (!theForm) {
+          theForm = document.form1;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+          if (!theForm.onsubmit || theForm.onsubmit() != false) {
+            theForm.__EVENTTARGET.value = eventTarget;
+            theForm.__EVENTARGUMENT.value = eventArgument;
+            theForm.submit();
+          }
+        }
+        //]]>
+      </script>
+
+      <script
+        src="/ESPOnline/WebResource.axd?d=wPiNgusIoNdjkWO3S1qgCblDEp2jEbquB1WTKBERF7GqEI0iOqLdXg8L0PtfnjxaUjJ5ICgfoROzY1SH6-iCHyzyiPR0-HG5uarLATQZ7KE1&amp;t=637811767220000000"
+        type="text/javascript"
+      ></script>
+
+      <script
+        src="/ESPOnline/ScriptResource.axd?d=3cSRcKGgX_MPt8-6n8Ktp9WEMbnG_I2KmqZBpe47XhwmmrAscMbO5rkVg3sWS0i4VuA5FFeyUp62qPgWFt7VxBsKo1friQi1dVww1pMzjJIWiHkKQSZSwaZ545ZAye7p3qmKioRru_pUUmAqUSrvpksbGhFYZ8hmOzrMlGVXYoQ1&amp;t=ffffffff858a58d7"
+        type="text/javascript"
+      ></script>
+      <script
+        src="/ESPOnline/ScriptResource.axd?d=4lSdA1DTUoFLX5gHGtFBjpFyoMZZgwBVkwX416wA-uFnwE7qL1Isi-_I6XrErxeXiavb5bPc7yFYXAW_fwhnShqnXLyfoFUQzXbz8TIUOW9IUBsfa22YUDv0madIFRPDkCGm9S0K1hGox3xHlpW1Nw2&amp;t=34a51159"
+        type="text/javascript"
+      ></script>
+      <script type="text/javascript">
+        //<![CDATA[
+        if (typeof Sys === "undefined")
+          throw new Error("ASP.NET Ajax client-side framework failed to load.");
+        //]]>
+      </script>
+
+      <script
+        src="/ESPOnline/ScriptResource.axd?d=H1Fn-tHpxFyjyg63DkjA1V8ah3VJbDn3qMdnBPaK5PwZ7fkgyO-R1l9_SGdktdkJNomhmRs6raLAjNiy_Wqx0YGrXrVSLnbmMApvo2gpM_XVFSw5GSGk3WMGT1Hkwlk24vdKGRt_1rBnXAwOIyuolA2&amp;t=34a51159"
+        type="text/javascript"
+      ></script>
+      <script type="text/javascript">
+        //<![CDATA[
+        function WebForm_OnSubmit() {
+          if (
+            typeof ValidatorOnSubmit == "function" &&
+            ValidatorOnSubmit() == false
+          )
+            return false;
+          return true;
+        }
+        //]]>
+      </script>
+
+      <div class="aspNetHidden">
+        <input
+          type="hidden"
+          name="__VIEWSTATEGENERATOR"
+          id="__VIEWSTATEGENERATOR"
+          value="717FCBFE"
+        />
+        <input
+          type="hidden"
+          name="__EVENTVALIDATION"
+          id="__EVENTVALIDATION"
+          value="/wEdAA1j6hjE+JpkVYEXep1Zgo0FD4zZrxX92uOlyIx1SyGTQokHj7KsGQZ9KI/q0cgR79eMO7fmjkJSfq6Zbgk2kTWn5BPdHG87XtyblNclsuAS8LvwPnslbtZbTzH+LM3KrmKoScikkrtCyMBYLZBZxv2YCNTGu6fpAlK5HiRhQ3QX7uQuDNsn18Vb/yPhT9ZPmVoNeSKFy2zxLVV4+zExdQxF5O2yeRHTM5Q6txDv+t953Rsahgpohlzzax1rmqU36I8bifdujSibODz2lHN+RHz6ZgBccShOZGrUVeB9QTqG/LeiPjxTNvhck7p0TewrD40="
+        />
+      </div>
+      <div class="container">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var url = window.location.pathname;
+            var substr = url.split("/");
+            var urlaspx = substr[substr.length - 1];
+            $(".nav").find(".active").removeClass("active");
+            $(".nav li a").each(function () {
+              if (this.href.indexOf(urlaspx) >= 0) {
+                $(this).parent().addClass("active");
+              }
+            });
+          });
+        </script>
+        <div class="row modal-header">
+          <div class="container">
+            <span id="bannerImg">
+              <input
+                type="image"
+                name="ctl00$ImageButton1"
+                id="ImageButton1"
+                class="img-responsive"
+                src="../Contents/Img/logo.png"
+            /></span>
+            <center>
+              <span
+                id="Label1"
+                color="#680000"
+                style="color: #cc0000; font-weight: bold; font-size: large"
+                >Cours du Jour</span
+              >
+            </center>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span
+              id="ANNEEUN"
+              color="#680000"
+              style="text-align: right; font-weight: 900; font-style: italic"
+              >2022/2023</span
+            >
+            <ul class="nav nav-pills pull-right">
+              <li class="active"><a href="Accueil.aspx">Accueil</a></li>
+              <li><a href="default.aspx">Se Connecter</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="row">
+                <div class="mainWrapper">
+                  <div class="wrapper">
+                    <div class="container">
+                      <script>
+                        $(function () {
+                          $("#tabs").tabs();
+                        });
+                      </script>
+                      <div id="tabs">
+                        <div class="ui-tabs">
+                          <ul>
+                            <li id="ContentPlaceHolder1_a1">
+                              <a href="#tabs-2">Espace Etudiants</a>
+                            </li>
+                            <li id="ContentPlaceHolder1_a2">
+                              <a href="#tabs-3">Espace Parents</a>
+                            </li>
+                            <li id="ContentPlaceHolder1_a3">
+                              <a href="#tabs-1">Espace Enseignants</a>
+                            </li>
+                            <li id="ContentPlaceHolder1_a4">
+                              <a href="#tabs-6"
+                                >Administration & Gouvernance
+                              </a>
+                            </li>
+                          </ul>
+
+                          <div id="tabs-1">
+                            <div
+                              id="ContentPlaceHolder1_Panel1"
+                              onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ContentPlaceHolder1_Button1&#39;)"
+                            >
+                              <div class="row">
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="breadcrumb">
+                                      <img
+                                        src="../Contents/Img/ens.jpg"
+                                        width="300px"
+                                        height="250px"
+                                      />
+                                      <h2 class="featurette-heading">
+                                        ESPRIT ...
+                                        <span class="text-muted"
+                                          >Se Former autrement pour une nouvelle
+                                          génération d&#39;ingénieurs.</span
+                                        >
+                                      </h2>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="form-signin">
+                                      <div class="form-group">
+                                        <h2
+                                          class="form-signin-heading"
+                                          style="color: #000000"
+                                        >
+                                          Espace Enseignant
+                                        </h2>
+                                        <p class="style1">
+                                          Protégez vos données personnelles Si
+                                          vous utilisez un ordinateur public ou
+                                          partagé, assurez-vous de quitter le
+                                          navigateur à la fin de votre session
+                                          de travail.
+                                        </p>
+                                      </div>
+                                      <span
+                                        id="ContentPlaceHolder1_Label5"
+                                        style="
+                                          font-weight: bold;
+                                          font-style: italic;
+                                        "
+                                        >Identifiant</span
+                                      >
+                                      <br />
+                                      <div class="form-group">
+                                        <input
+                                          name="ctl00$ContentPlaceHolder1$TextBox1"
+                                          type="text"
+                                          id="ContentPlaceHolder1_TextBox1"
+                                          placeholder="Identifiant"
+                                          style="height: 35px; width: 400px"
+                                        />
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator1"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Identifiant incorrect
+                                        </span>
+
+                                        <br />
+
+                                        <br />
+
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator2"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Password incorrect</span
+                                        >
+                                      </div>
+                                      <div class="form-group"></div>
+                                      <div class="form-group">
+                                        <input
+                                          type="submit"
+                                          name="ctl00$ContentPlaceHolder1$Button1"
+                                          value="Suivant"
+                                          onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ContentPlaceHolder1$Button1", "", true, "EnsignantInfoGroup", "", false, false))'
+                                          id="ContentPlaceHolder1_Button1"
+                                          class="btn btn-lg btn-block"
+                                          style="
+                                            color: Black;
+                                            background-color: #999999;
+                                            width: 400px;
+                                          "
+                                        />
+
+                                        <table>
+                                          <tr>
+                                            <td>
+                                              <div
+                                                style="margin-left: 200px"
+                                              ></div>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <span
+                                        id="ContentPlaceHolder1_Label1"
+                                      ></span>
+                                      <script type="text/javascript">
+                                        //<![CDATA[
+                                        Sys.WebForms.PageRequestManager._initialize(
+                                          "ctl00$ContentPlaceHolder1$ScriptManager1",
+                                          "form1",
+                                          [],
+                                          [],
+                                          [],
+                                          90,
+                                          "ctl00"
+                                        );
+                                        //]]>
+                                      </script>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="tabs-6">
+                            <div
+                              id="ContentPlaceHolder1_Panel4"
+                              onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ContentPlaceHolder1_ButtonAdmin&#39;)"
+                            >
+                              <div class="row">
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="breadcrumb">
+                                      <img
+                                        src="../Contents/Img/stat.jpg"
+                                        height="290px"
+                                      />
+                                      <h2 class="featurette-heading">
+                                        ESPRIT ...
+                                        <span class="text-muted"
+                                          >Se Former autrement pour une nouvelle
+                                          génération d&#39;ingénieurs.</span
+                                        >
+                                      </h2>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="form-signin">
+                                      <div class="form-group">
+                                        <h2
+                                          class="form-signin-heading"
+                                          style="color: #000000"
+                                        >
+                                          Espace Administration & Gouvernance
+                                        </h2>
+                                        <p>
+                                          <span class="style1"
+                                            >Protégez vos données personnelles
+                                            Si vous utilisez un ordinateur
+                                            public ou partagé, assurez-vous de
+                                            quitter le navigateur à la fin de
+                                            votre session de travail.</span
+                                          >
+                                        </p>
+                                      </div>
+                                      <br />
+                                      <div class="form-group">
+                                        <input
+                                          name="ctl00$ContentPlaceHolder1$TextBox5"
+                                          type="text"
+                                          id="ContentPlaceHolder1_TextBox5"
+                                          placeholder="Identifiant"
+                                          style="height: 35px; width: 400px"
+                                        />
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator5"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Identifiant incorrect
+                                        </span>
+                                      </div>
+                                      <div class="form-group">
+                                        <input
+                                          name="ctl00$ContentPlaceHolder1$TextBox6"
+                                          type="password"
+                                          id="ContentPlaceHolder1_TextBox6"
+                                          placeholder="Mot de passe"
+                                          style="height: 35px; width: 400px"
+                                        />
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator6"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Password incorrect</span
+                                        >
+                                      </div>
+                                      <div class="form-group">
+                                        <input
+                                          type="submit"
+                                          name="ctl00$ContentPlaceHolder1$ButtonAdmin"
+                                          value="Connexion"
+                                          onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ContentPlaceHolder1$ButtonAdmin", "", true, "AdminInfoGroup", "", false, false))'
+                                          id="ContentPlaceHolder1_ButtonAdmin"
+                                          class="btn btn-lg btn-block btn-danger"
+                                          style="width: 400px"
+                                        />
+                                      </div>
+                                      <span
+                                        id="ContentPlaceHolder1_Label4"
+                                      ></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="tabs-2">
+                            <div
+                              id="ContentPlaceHolder1_Panel2"
+                              onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ContentPlaceHolder1_Button3&#39;)"
+                            >
+                              <div class="row">
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="breadcrumb">
+                                      <img
+                                        src="../Contents/Img/affiche_200613.jpg"
+                                        width="290px"
+                                      />
+                                      <h2 class="featurette-heading">
+                                        ESPRIT ...
+                                        <span class="text-muted"
+                                          >Se Former autrement pour une nouvelle
+                                          génération d&#39;ingénieurs.</span
+                                        >
+                                      </h2>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="form-signin">
+                                      <div class="form-group">
+                                        <h2
+                                          class="form-signin-heading"
+                                          style="color: #000000"
+                                        >
+                                          Espace Etudiant
+                                        </h2>
+                                        <p class="style1">
+                                          Protégez vos données personnelles Si
+                                          vous utilisez un ordinateur public ou
+                                          partagé, assurez-vous de quitter le
+                                          navigateur à la fin de votre session
+                                          de travail.
+                                        </p>
+                                      </div>
+                                      <span
+                                        id="ContentPlaceHolder1_Label7"
+                                        style="
+                                          font-weight: bold;
+                                          font-style: italic;
+                                        "
+                                        >Identifiant</span
+                                      >
+                                      <br />
+                                      <div class="form-group">
+                                        <input
+                                          name="ctl00$ContentPlaceHolder1$TextBox3"
+                                          type="text"
+                                          id="ContentPlaceHolder1_TextBox3"
+                                          placeholder="Votre ID"
+                                          style="height: 35px; width: 400px"
+                                        />
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator3"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Cin incorrect
+                                        </span>
+                                        <br />
+
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator7"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Mot de passe incorrect
+                                        </span>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <div class="form-group"></div>
+                                        <input
+                                          type="submit"
+                                          name="ctl00$ContentPlaceHolder1$Button3"
+                                          value="Suivant"
+                                          onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ContentPlaceHolder1$Button3", "", true, "EtudiantInfoGroup", "", false, false))'
+                                          id="ContentPlaceHolder1_Button3"
+                                          class="btn btn-lg btn-block"
+                                          style="
+                                            color: Black;
+                                            background-color: #666666;
+                                            width: 400px;
+                                          "
+                                        />
+                                      </div>
+                                      <span
+                                        id="ContentPlaceHolder1_Label2"
+                                      ></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="tabs-3">
+                            <div
+                              id="ContentPlaceHolder1_Panel3"
+                              onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ContentPlaceHolder1_ButtonParent&#39;)"
+                            >
+                              <div class="row">
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="breadcrumb">
+                                      <img
+                                        src="../Contents/Img/affiche_200613.jpg"
+                                        width="290px"
+                                      />
+                                      <h2 class="featurette-heading">
+                                        ESPRIT ...
+                                        <span class="text-muted"
+                                          >Se Former autrement pour une nouvelle
+                                          génération d&#39;ingénieurs.</span
+                                        >
+                                      </h2>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3 col-md-6 col-lg-6">
+                                  <div class="well-lg">
+                                    <div class="form-signin">
+                                      <div class="form-group">
+                                        <h2
+                                          class="form-signin-heading"
+                                          style="color: #000000"
+                                        >
+                                          Espace Parent
+                                        </h2>
+                                        <p class="style1">
+                                          Protégez vos données personnelles Si
+                                          vous utilisez un ordinateur public ou
+                                          partagé, assurez-vous de quitter le
+                                          navigateur à la fin de votre session
+                                          de travail.
+                                        </p>
+                                      </div>
+                                      <span
+                                        id="ContentPlaceHolder1_Label99"
+                                        style="
+                                          font-weight: bold;
+                                          font-style: italic;
+                                        "
+                                        >Numéro CIN</span
+                                      >
+                                      <br />
+                                      <div class="form-group">
+                                        <input
+                                          name="ctl00$ContentPlaceHolder1$TextBox4"
+                                          type="text"
+                                          id="ContentPlaceHolder1_TextBox4"
+                                          placeholder="Veuillez saisir le n° CIN de l&#39;étudiant "
+                                          style="height: 35px; width: 400px"
+                                        />
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator4"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Cin incorrect
+                                        </span>
+
+                                        <br />
+                                        <span
+                                          id="ContentPlaceHolder1_Label95"
+                                          style="
+                                            color: #990033;
+                                            font-weight: bold;
+                                            font-style: italic;
+                                          "
+                                          >Mot de passe</span
+                                        >
+                                        <input
+                                          name="ctl00$ContentPlaceHolder1$pass_parent"
+                                          type="password"
+                                          id="ContentPlaceHolder1_pass_parent"
+                                          placeholder="Mot de passe"
+                                          style="height: 35px; width: 400px"
+                                        />
+                                        <span
+                                          id="ContentPlaceHolder1_RequiredFieldValidator8"
+                                          class="text-danger"
+                                          style="visibility: hidden"
+                                          >Mot de passe incorrect
+                                        </span>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <input
+                                          type="submit"
+                                          name="ctl00$ContentPlaceHolder1$ButtonParent"
+                                          value="Connexion"
+                                          onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ContentPlaceHolder1$ButtonParent", "", true, "ParentInfoGroup", "", false, false))'
+                                          id="ContentPlaceHolder1_ButtonParent"
+                                          class="btn btn-lg btn-block btn-danger"
+                                          style="width: 400px"
+                                        />
+                                        <br />
+
+                                        <a
+                                          id="ContentPlaceHolder1_LinkButton1"
+                                          href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$LinkButton1&#39;,&#39;&#39;)"
+                                          style="color: #cc0000"
+                                          >J'ai oublié mon mot de passe</a
+                                        >
+                                      </div>
+                                      <span
+                                        id="ContentPlaceHolder1_Label3"
+                                      ></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="push"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="modal-footer">
+          <p class="text-center">
+            © 2020 Esprit, Inc. · <a href="#">Privacy</a> ·
+            <a href="#">Terms</a>
+          </p>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        //<![CDATA[
+        var Page_Validators = new Array(
+          document.getElementById(
+            "ContentPlaceHolder1_RequiredFieldValidator1"
+          ),
+          document.getElementById(
+            "ContentPlaceHolder1_RequiredFieldValidator2"
+          ),
+          document.getElementById(
+            "ContentPlaceHolder1_RequiredFieldValidator5"
+          ),
+          document.getElementById(
+            "ContentPlaceHolder1_RequiredFieldValidator6"
+          ),
+          document.getElementById(
+            "ContentPlaceHolder1_RequiredFieldValidator3"
+          ),
+          document.getElementById(
+            "ContentPlaceHolder1_RequiredFieldValidator7"
+          ),
+          document.getElementById(
+            "ContentPlaceHolder1_RequiredFieldValidator4"
+          ),
+          document.getElementById("ContentPlaceHolder1_RequiredFieldValidator8")
+        );
+        //]]>
+      </script>
+
+      <script type="text/javascript">
+        //<![CDATA[
+        var ContentPlaceHolder1_RequiredFieldValidator1 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator1"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator1"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate =
+          "ContentPlaceHolder1_TextBox1";
+        ContentPlaceHolder1_RequiredFieldValidator1.errormessage =
+          "Identifiant incorrect ";
+        ContentPlaceHolder1_RequiredFieldValidator1.validationGroup =
+          "EnsignantInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+        var ContentPlaceHolder1_RequiredFieldValidator2 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator2"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator2"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator2.controltovalidate =
+          "ContentPlaceHolder1_TextBox2";
+        ContentPlaceHolder1_RequiredFieldValidator2.errormessage =
+          "Password incorrect";
+        ContentPlaceHolder1_RequiredFieldValidator2.enabled = "False";
+        ContentPlaceHolder1_RequiredFieldValidator2.validationGroup =
+          "EnsignantInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator2.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator2.initialvalue = "";
+        var ContentPlaceHolder1_RequiredFieldValidator5 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator5"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator5"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator5.controltovalidate =
+          "ContentPlaceHolder1_TextBox5";
+        ContentPlaceHolder1_RequiredFieldValidator5.errormessage =
+          "Identifiant incorrect ";
+        ContentPlaceHolder1_RequiredFieldValidator5.validationGroup =
+          "AdminInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator5.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator5.initialvalue = "";
+        var ContentPlaceHolder1_RequiredFieldValidator6 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator6"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator6"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator6.controltovalidate =
+          "ContentPlaceHolder1_TextBox6";
+        ContentPlaceHolder1_RequiredFieldValidator6.errormessage =
+          "Password incorrect";
+        ContentPlaceHolder1_RequiredFieldValidator6.validationGroup =
+          "AdminInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator6.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator6.initialvalue = "";
+        var ContentPlaceHolder1_RequiredFieldValidator3 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator3"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator3"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator3.controltovalidate =
+          "ContentPlaceHolder1_TextBox3";
+        ContentPlaceHolder1_RequiredFieldValidator3.errormessage =
+          "Cin incorrect ";
+        ContentPlaceHolder1_RequiredFieldValidator3.validationGroup =
+          "EtudiantInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator3.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator3.initialvalue = "";
+        var ContentPlaceHolder1_RequiredFieldValidator7 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator7"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator7"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator7.controltovalidate =
+          "ContentPlaceHolder1_TextBox7";
+        ContentPlaceHolder1_RequiredFieldValidator7.errormessage =
+          "Mot de passe incorrect ";
+        ContentPlaceHolder1_RequiredFieldValidator7.enabled = "False";
+        ContentPlaceHolder1_RequiredFieldValidator7.validationGroup =
+          "EtudiantInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator7.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator7.initialvalue = "";
+        var ContentPlaceHolder1_RequiredFieldValidator4 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator4"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator4"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator4.controltovalidate =
+          "ContentPlaceHolder1_TextBox4";
+        ContentPlaceHolder1_RequiredFieldValidator4.errormessage =
+          "Cin incorrect ";
+        ContentPlaceHolder1_RequiredFieldValidator4.validationGroup =
+          "ParentInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator4.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator4.initialvalue = "";
+        var ContentPlaceHolder1_RequiredFieldValidator8 = document.all
+          ? document.all["ContentPlaceHolder1_RequiredFieldValidator8"]
+          : document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator8"
+            );
+        ContentPlaceHolder1_RequiredFieldValidator8.controltovalidate =
+          "ContentPlaceHolder1_TextBox7";
+        ContentPlaceHolder1_RequiredFieldValidator8.errormessage =
+          "Mot de passe incorrect ";
+        ContentPlaceHolder1_RequiredFieldValidator8.enabled = "False";
+        ContentPlaceHolder1_RequiredFieldValidator8.validationGroup =
+          "EtudiantInfoGroup";
+        ContentPlaceHolder1_RequiredFieldValidator8.evaluationfunction =
+          "RequiredFieldValidatorEvaluateIsValid";
+        ContentPlaceHolder1_RequiredFieldValidator8.initialvalue = "";
+        //]]>
+      </script>
+
+      <script type="text/javascript">
+        //<![CDATA[
+
+        var Page_ValidationActive = false;
+        if (typeof ValidatorOnLoad == "function") {
+          ValidatorOnLoad();
+        }
+
+        function ValidatorOnSubmit() {
+          if (Page_ValidationActive) {
+            return ValidatorCommonOnSubmit();
+          } else {
+            return true;
+          }
+        }
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator1"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator1"
+            )
+          );
+        };
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator2"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator2"
+            )
+          );
+        };
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator5"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator5"
+            )
+          );
+        };
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator6"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator6"
+            )
+          );
+        };
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator3"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator3"
+            )
+          );
+        };
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator7"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator7"
+            )
+          );
+        };
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator4"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator4"
+            )
+          );
+        };
+
+        document.getElementById(
+          "ContentPlaceHolder1_RequiredFieldValidator8"
+        ).dispose = function () {
+          Array.remove(
+            Page_Validators,
+            document.getElementById(
+              "ContentPlaceHolder1_RequiredFieldValidator8"
+            )
+          );
+        };
+        //]]>
+      </script>
+    </form>
+    <script
+      src="../Contents/CSS3/js/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../Contents/CSS3/js/bootstrap.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

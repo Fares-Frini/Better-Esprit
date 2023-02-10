@@ -1,0 +1,95 @@
+    body
+{
+    width: 100%;
+}
+#LinkButton1
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+#LinkButton1:hover
+{
+    background-color: #CC0000;
+    color: white;
+}
+#wrap
+{
+    position: sticky;
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.1) 0px 1px 2px, rgba(255, 0, 0, 0.1) 0px 2px 4px, rgba(255, 0, 0, 0.1) 0px 4px 8px, rgba(255, 0, 0, 0.1) 0px 8px 16px, rgba(255, 0, 0, 0.1) 0px 16px 32px, rgba(255, 0, 0, 0.1) 0px 32px 64px;
+}
+.container-fluid
+{
+    background-color: #fefae0;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
+.row
+{
+    width: 100%;
+    top: 50px;
+    position: relative; 
+    
+}
+hr
+{
+    display: none;
+}
+.navbar-inverse .navbar-nav > li > a{
+    font-weight: bold;
+    background-color: #CC0000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    background-color: #F3A19A !important;
+    color: black !important;
+}
+.img-responsive
+{
+    margin: 10px;
+    border: solid 2px black;
+}
+.dropdown-menu a
+{
+    background-color: #CC0000;
+    margin: 2px;
+    padding: 10px !important;
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold !important;
+}
+a:hover, a:focus
+{
+    text-decoration: none;
+    background-color: #F3A19A !important;
+    color: black !important;
+}
+.dropdown-menu
+{
+    background-color: rgb(88, 88, 88) !important;
+    border-radius: 10px !important;
+}
+#Label3
+{
+    color: red !important;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 2.2em !important;
+}
+#LinkButton1
+{
+text-decoration:    none;
+}
+center h1 ,center div
+{
+    background-color: white !important;
+}
+.jumbotron
+{
+    background-color: black !important;
+}
