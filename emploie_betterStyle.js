@@ -1,6 +1,5 @@
-console.log("emploi better Style");
 if (window.location.href=="https://esprit-tn.com/ESPOnline/Etudiants/Emplois.aspx") {
-
+    console.log("emploi better Style");
     //Table Resize
         var tabemploie=document.getElementsByTagName("tr");
         tabemploie[0].style.fontSize="3em";
@@ -29,15 +28,13 @@ if (window.location.href=="https://esprit-tn.com/ESPOnline/Etudiants/Emplois.asp
         var download=document.getElementsByTagName("td");
         var tr=document.getElementsByTagName("tr");
         var th=document.getElementsByTagName("th");
-        console.log(download,tr);
         for (let i = 1; i < download.length; i+=3) {
             download[i].classList.toggle("download");
-            download[i].innerHTML="Télecharger"
+            
         }
         for (let i = 1; i < tr.length; i++) {
             tr[i].style.background="none";
             tr[i].style.color="black";
-            console.log(tr[i])
             
         }
     //colspan
@@ -87,7 +84,6 @@ if (window.location.href=="https://esprit-tn.com/ESPOnline/Etudiants/Emplois.asp
             }
         }
         //emploie last
-        console.log(last);
         const lastp = document.createElement("span");
         const lastnode = document.createTextNode(" LAST");
         lastp.appendChild(lastnode);
@@ -97,14 +93,14 @@ if (window.location.href=="https://esprit-tn.com/ESPOnline/Etudiants/Emplois.asp
         var date =new Date;
         if (date.getDate()<newday) {
             const newp = document.createElement("span");
-            const newnode = document.createTextNode(" NEW");
+            const newnode = document.createTextNode("NEW");
             newp.appendChild(newnode);
             download[last].appendChild(newp); 
             download[last].getElementsByTagName("span")[2].classList.toggle("shine");
         }
         //apperçu
         for (let i = 2; i < download.length; i+=3) {
-            download[i].innerHTML="Aperçu"
+            download[i].getElementsByTagName("a")[0].innerHTML="Aperçu"
             download[i].classList.toggle("apercu");
         }
         //table shadow box

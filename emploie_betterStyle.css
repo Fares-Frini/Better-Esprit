@@ -37,12 +37,25 @@ tbody
     transition:  0.4s ease-in-out;
     padding: 0px !important;
     width: 200px;
+    transition:   0.2s ease-in-out;
 }
 .download:hover  
 {
     color: white !important;
     background-color: #F00020 !important;
-    letter-spacing: 0.09em;
+}
+.download a
+{
+    text-decoration: none;
+    color: black;
+    transition:   0.4s ease-in-out;
+}
+.download:hover > a
+{
+    color: white !important;
+    background-color: #F00020 !important;
+    letter-spacing: 0.09em !important; 
+    text-decoration: none !important;
 }
 
 .apercu
@@ -51,12 +64,25 @@ tbody
     transition:  0.4s ease-in-out;
     padding: 0px !important;
     width: 200px;
+    transition:   0.2s ease-in-out;
 }
 .apercu:hover  
 {
     color: white !important;
     background-color: #F00020 !important;
-    letter-spacing: 0.09em;
+}
+.apercu a
+{
+    text-decoration: none;
+    color: black;
+    transition:   0.4s ease-in-out;
+}
+.apercu:hover > a
+{
+    color: white !important;
+    background-color: #F00020 !important;
+    letter-spacing: 0.09em !important; 
+    text-decoration: none !important;
 }
 .shadow
 {
