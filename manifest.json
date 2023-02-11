@@ -1,17 +1,17 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "BETTER ESPRIT",
   "description": "By Frini Mohamed Fares",
-  "version": "0.1",
+  "version": "0.2",
   "content_scripts": [
     {
       "matches": [
         "https://esprit-tn.com/ESPOnline/Etudiants/Resultat2021.aspx","https://esprit-tn.com/ESPOnline/Online/default.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Accueil.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Emplois.aspx"
       ],
       "js": [
-        "content.js","login_betterStyle.js"
+        "content.js","login_betterStyle.js","emploie_betterStyle.js"
       ],
-      "css": ["content.css","login_betterStyle.css","acceuil.css","emploie.css"]
+      "css": ["content.css","login_betterStyle.css","acceuil.css","emploie_betterStyle.css"]
     }
   ],
   /*"content_scripts": [
@@ -27,16 +27,13 @@
     "icons": {
     "128": "128.png"
   },
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html"
   },
   "permissions": [
-    "webNavigation"
+    "webNavigation","notifications","alarms"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": true
+    "service_worker": "background.js"
   }
 }

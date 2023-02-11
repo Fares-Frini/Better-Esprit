@@ -1,10 +1,13 @@
 body {
   width: 500px;
   height: 600px;
-
+  overflow: hidden; /* Hide scrollbars */
   margin: 0px;
   background: linear-gradient(#180002, #2d0006, #180002);
   font-family:"Calibri (Body)";
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 .header {
   width: 500px;
@@ -142,5 +145,4 @@ h2
    font-size: 30px;
    font-family: "Gill Sans", sans-serif;
 }  
-  
   

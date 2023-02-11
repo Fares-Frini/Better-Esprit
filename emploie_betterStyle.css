@@ -1,0 +1,65 @@
+
+tbody
+{
+    border: solid 10px #051923;
+    border-radius: 10px !important;
+}
+
+.shine
+{
+    animation: last infinite 2s ;
+        padding: 3px;
+        border-radius: 3px;        
+        padding:  3px;
+        color: white;
+        font-weight: bold;  
+        margin-right: 5px;
+}
+@keyframes last
+{
+    0%
+    {
+        background-color: #CC0000;
+    }
+    50%
+    {
+        background-color: #F00020;
+        box-shadow: #F00020 0px 0px 0px 2px ;
+    }
+    100%
+    {
+        background-color: #CC0000;
+    }
+}
+.download
+{
+    background-color: white;
+    transition:  0.4s ease-in-out;
+    padding: 0px !important;
+    width: 200px;
+}
+.download:hover  
+{
+    color: white !important;
+    background-color: #F00020 !important;
+    letter-spacing: 0.09em;
+}
+
+.apercu
+{
+    background-color: white;
+    transition:  0.4s ease-in-out;
+    padding: 0px !important;
+    width: 200px;
+}
+.apercu:hover  
+{
+    color: white !important;
+    background-color: #F00020 !important;
+    letter-spacing: 0.09em;
+}
+.shadow
+{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
