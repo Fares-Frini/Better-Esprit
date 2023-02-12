@@ -2,27 +2,19 @@
   "manifest_version": 3,
   "name": "BETTER ESPRIT",
   "description": "By Frini Mohamed Fares",
-  "version": "0.2",
+  "version": "0.3.1",
   "content_scripts": [
     {
       "matches": [
-        "https://esprit-tn.com/ESPOnline/Etudiants/Resultat2021.aspx","https://esprit-tn.com/ESPOnline/Online/default.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Accueil.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Emplois.aspx"
+        "https://esprit-tn.com/ESPOnline/Etudiants/Resultat2021.aspx","https://esprit-tn.com/ESPOnline/Online/default.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Accueil.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Emplois.aspx","https://esprit-tn.com/ESPOnline/Etudiants/absenceetud.aspx","https://esprit-tn.com/ESPOnline/Etudiants/CCNA1.aspx","https://esprit-tn.com/ESPOnline/Etudiants/ResultatPrincipale2021.aspx","https://esprit-tn.com/ESPOnline/Etudiants/ResultatRattrapage2021.aspx","https://esprit-tn.com/ESPOnline/Etudiants/LANG2.aspx"
       ],
       "js": [
-        "content.js","login_betterStyle.js","emploie_betterStyle.js"
+        "content.js","login_betterStyle.js","emploie_betterStyle.js","absence.js"
       ],
-      "css": ["content.css","login_betterStyle.css","acceuil.css","emploie_betterStyle.css"]
+      "css": ["content.css","login_betterStyle.css","acceuil.css","emploie_betterStyle.css","absence.js"]
     }
   ],
-  /*"content_scripts": [
-    {
-      "matches": [
-        "https://esprit-tn.com/ESPOnline/Online/default.aspx"
-      ],"js": ["login_betterStyle.js"],
-      "css":["login_betterStyle.css"]
-      
-    }
-  ],*/  
+
 
     "icons": {
     "128": "128.png"

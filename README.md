@@ -18,3 +18,8 @@
   
   # Beta 3.1
   :heavy_check_mark: Fix button Telecharger et Aperçu <br>
+  
+  # To Do Beta 4.0
+  Apply new Style on All <br>
+  :heavy_check_mark: Pdf Show by class <br>
+  :heavy_check_mark: background color fix <br>

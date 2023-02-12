@@ -106,4 +106,24 @@ if (window.location.href=="https://esprit-tn.com/ESPOnline/Etudiants/Emplois.asp
         //table shadow box
         var table = document.getElementsByTagName("table");
         table[0].classList.toggle("shadow");
+        //emploie display
+        const newf = document.createElement("iframe");
+        var page=document.getElementById("Label3").innerHTML;
+        var cr=["1A1","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1EM1","1EM2","1EM3","1GC1",
+        "2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2EM1","2EM2","2EM3","2EM4","2GC1","2P1","2P2","2P3","2P4",
+        "3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3B1","3B10","3B11","3B12","3B13","3B14","3B15","3B16","3B2","3B3","3B4","3B5","3B","3B","3B","3B",
+        ];
+        console.log(page);
+                
+        var j=0;
+        while (page!=cr[j] && j<cr.length) {
+            page=j;
+            j++;
+        }
+        newf.src="https://firebasestorage.googleapis.com/v0/b/better-esprit.appspot.com/o/emploie.pdf?alt=media&token=9173c10c-071b-4601-a34d-1004d56404e7#toolbar=0&zoom=Fit&page="+page;
+        newf.width="700px";
+        newf.height="500px";
+        var doc =document.getElementsByClassName("col-lg-6");
+        console.log(doc);
+        doc[0].appendChild(newf); 
 }

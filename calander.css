@@ -1,0 +1,93 @@
+body {
+    width: 600px;
+    height: 100px;
+    overflow: hidden; /* Hide scrollbars */
+    margin: 0px;
+    background: linear-gradient(#180002, #2d0006, #180002);
+    font-family:"Calibri (Body)";
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+    
+  }
+  .header {
+    width: 600px;
+  
+    height: 150px;
+    background: linear-gradient(#be0202, #a30000, #be0202);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+  
+    flex-direction: column;
+    flex: 1 100px;
+  }
+  .header img {
+    width: 200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  #emploie {
+    width: 600px;
+    height: 400px;
+    scrollbar-width: none !important;
+  }
+  #calender {
+    position: absolute;
+    left: 20px;
+  }
+  body table {
+    width: 500px;
+    padding-top: 30px;
+  }
+  #icon {
+    width: 50px;
+    transform: 0.5s;
+  }
+  #icon:hover {
+    background-color: #ff6663;
+    padding: 10px;
+    transition: 1s;
+  }
+  #icon {
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    text-decoration: none;
+    transform: 1s;
+    padding: 10px;
+  }
+
+  #fulllogo {
+    background-color: white;
+    border: #3f0000 solid 3px;
+    border-radius: 25px;
+    animation: 1s woop ease-in-out;
+    width: 200px;
+  }
+  @keyframes woop {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 190px;
+    }
+    70% {
+      width: 175px;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+  
+  h2
+  {
+      color:white;
+      text-decoration: none;
+     font-size: 30px;
+     font-family: "Gill Sans", sans-serif;
+  }  
+    
+  

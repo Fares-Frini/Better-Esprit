@@ -6,8 +6,10 @@ body {
   background: linear-gradient(#180002, #2d0006, #180002);
   font-family:"Calibri (Body)";
 }
-body::-webkit-scrollbar {
+
+::-webkit-scrollbar {
   display: none;
+  
 }
 .header {
   width: 500px;
@@ -31,6 +33,7 @@ body::-webkit-scrollbar {
 #emploie {
   width: 500px;
   height: 448px;
+  scrollbar-width: none !important;
 }
 #calender {
   position: absolute;
