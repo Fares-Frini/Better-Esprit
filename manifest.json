@@ -23,7 +23,10 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "webNavigation","notifications","alarms"
+    "webNavigation",
+    "notifications",
+    "storage",
+    "alarms"
   ],
   "background": {
     "service_worker": "background.js"
