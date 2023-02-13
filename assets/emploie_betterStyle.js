@@ -112,9 +112,7 @@ if (window.location.href=="https://esprit-tn.com/ESPOnline/Etudiants/Emplois.asp
         var cr=["1A1","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1A","1EM1","1EM2","1EM3","1GC1",
         "2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2A","2EM1","2EM2","2EM3","2EM4","2GC1","2P1","2P2","2P3","2P4",
         "3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3A","3B1","3B10","3B11","3B12","3B13","3B14","3B15","3B16","3B2","3B3","3B4","3B5","3B","3B","3B","3B",
-        ];
-        console.log(page);
-                
+        ];                
         var j=0;
         while (page!=cr[j] && j<cr.length) {
             page=j;
@@ -125,6 +123,8 @@ if (window.location.href=="https://esprit-tn.com/ESPOnline/Etudiants/Emplois.asp
         newf.width="700px";
         newf.height="500px";
         var doc =document.getElementsByClassName("col-lg-6");
-        console.log(doc);
         doc[0].appendChild(newf); 
-}
+        //form modify
+        var form=document.getElementById("form");
+        console.log(form)
+    }

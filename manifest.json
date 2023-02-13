@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "BETTER ESPRIT",
   "description": "By Frini Mohamed Fares and Rayen Jellali",
-  "version": "0.3.3",
+  "version": "0.4",
   "content_scripts": [
     {
       "matches": [

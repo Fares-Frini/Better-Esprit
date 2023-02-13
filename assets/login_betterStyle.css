@@ -159,6 +159,8 @@ span#Label1
     color: white !important;
     font-weight: bold !important;
     font-size: 3em  !important;
+    background-color: #051923;
+    padding: 100px;
 }
 center
 {
@@ -180,4 +182,5 @@ span#ANNEEUN
 }
 #form1
 {
+    background-color: rgba(255, 0, 0, 0) !important;
 }
