@@ -1,0 +1,11 @@
+.total
+{
+    color: black !important;
+    padding: 100px;
+    font-size: 2em !important;
+    display: inline-block;
+}
+h2 span
+{
+    color: red !important;
+}

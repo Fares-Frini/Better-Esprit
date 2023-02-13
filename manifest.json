@@ -1,34 +1,31 @@
 {
   "manifest_version": 3,
   "name": "BETTER ESPRIT",
-  "description": "By Frini Mohamed Fares",
-  "version": "0.3.1",
+  "description": "By Frini Mohamed Fares and Rayen Jellali",
+  "version": "0.3.3",
   "content_scripts": [
     {
       "matches": [
         "https://esprit-tn.com/ESPOnline/Etudiants/Resultat2021.aspx","https://esprit-tn.com/ESPOnline/Online/default.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Accueil.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Emplois.aspx","https://esprit-tn.com/ESPOnline/Etudiants/absenceetud.aspx","https://esprit-tn.com/ESPOnline/Etudiants/CCNA1.aspx","https://esprit-tn.com/ESPOnline/Etudiants/ResultatPrincipale2021.aspx","https://esprit-tn.com/ESPOnline/Etudiants/ResultatRattrapage2021.aspx","https://esprit-tn.com/ESPOnline/Etudiants/LANG2.aspx"
       ],
       "js": [
-        "content.js","login_betterStyle.js","emploie_betterStyle.js","absence.js"
+        "/assets/resultat_betterStyle.js","/assets/login_betterStyle.js","/assets/emploie_betterStyle.js","/assets/better_absence.js"
       ],
-      "css": ["content.css","login_betterStyle.css","acceuil.css","emploie_betterStyle.css","absence.js"]
+      "css": ["/assets/resultat_betterStyle.css","/assets/login_betterStyle.css","/assets/better_acceuil.css","/assets/emploie_betterStyle.css","/assets/better_absence.js"]
     }
   ],
 
 
     "icons": {
-    "128": "128.png"
+    "128": "img/128.png"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup/popup.html"
   },
   "permissions": [
     "webNavigation",
     "notifications",
     "storage",
     "alarms"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  }
+  ]
 }
