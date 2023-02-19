@@ -46,11 +46,12 @@ hr
 }
 .navbar-inverse .navbar-nav > li > a{
     font-weight: bold;
-    background-color: #CC0000;
+    background-color: #b40000;
     border-radius: 10px;
     padding: 10px;
     margin-left: 10px;
     margin-bottom: 5px;
+   transition: 0.4s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
@@ -99,4 +100,9 @@ center h1 ,center div
 .jumbotron
 {
     background-color: black !important;
+}
+.navbar-inverse .navbar-nav > li > a:focus{
+    transform: scale(1.1);
+    letter-spacing: 0.1em;
+    transition: 0.4s ;
 }

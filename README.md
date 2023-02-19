@@ -1,6 +1,6 @@
 # Better-Esprit
 
-  ![logo](BE_fulllogo.png)
+  ![logo](/img/BE_fulllogo.png)
   
   # ! The projetc is Still under development if you found some bugs Report it !
   
@@ -19,7 +19,9 @@
   # Beta 3.1
   :heavy_check_mark: Fix button Telecharger et Aperçu <br>
   
-  # To Do Beta 4.0
-  Apply new Style on All <br>
+  # Beta 4.0
+  :heavy_check_mark: Structure upgrade <br>
   :heavy_check_mark: Pdf Show by class <br>
   :heavy_check_mark: background color fix <br>
+  :heavy_check_mark: login style fix <br>
+  :heavy_check_mark: last and new shin fix <br>

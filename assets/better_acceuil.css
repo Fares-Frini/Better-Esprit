@@ -1,19 +1,23 @@
-.jumbotron
-{
-    background:linear-gradient(#be0202, #a30000, #be0202) !important;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+.jumbotron {
+  background: -webkit-linear-gradient(to top, #3a0210, #b40000);
+  background: linear-gradient(to top, #3a0210, #b40000);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+  margin-top: 8%;
+  border-radius: 10px !important;
+  border-style: inset;
+  border-color: rgb(255, 0, 0);
+  border-width: 5px;
 }
-div h2
-{
-    font-weight: bold;
-    border-radius: 5px;
+div h2 {
+  font-weight: bold;
+  border-radius: 5px;
 }
-a.btn-lg:hover
-{
-    text-decoration: none;
-    background-color: #FF3131 !important;
+a.btn-lg:hover {
+  text-decoration: none;
+  background-color: #ff3131 !important;
 }
-a.btn-lg
-{
-    transition: 0.2s;
+a.btn-lg {
+  transition: 0.2s;
 }

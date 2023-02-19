@@ -9,9 +9,9 @@
         "https://esprit-tn.com/ESPOnline/Etudiants/Resultat2021.aspx","https://esprit-tn.com/ESPOnline/Online/default.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Accueil.aspx","https://esprit-tn.com/ESPOnline/Etudiants/Emplois.aspx","https://esprit-tn.com/ESPOnline/Etudiants/absenceetud.aspx","https://esprit-tn.com/ESPOnline/Etudiants/CCNA1.aspx","https://esprit-tn.com/ESPOnline/Etudiants/ResultatPrincipale2021.aspx","https://esprit-tn.com/ESPOnline/Etudiants/ResultatRattrapage2021.aspx","https://esprit-tn.com/ESPOnline/Etudiants/LANG2.aspx"
       ],
       "js": [
-        "/assets/resultat_betterStyle.js","/assets/login_betterStyle.js","/assets/emploie_betterStyle.js","/assets/better_absence.js"
+        "/assets/resultat_betterStyle.js","/assets/login_betterStyle.js","/assets/emploie_betterStyle.js","/assets/better_absence.js","/assets/examen_betterStyle.js","/assets/particles.js","/assets/app.js"
       ],
-      "css": ["/assets/resultat_betterStyle.css","/assets/login_betterStyle.css","/assets/better_acceuil.css","/assets/emploie_betterStyle.css","/assets/better_absence.js"]
+      "css": ["/assets/resultat_betterStyle.css","/assets/login_betterStyle.css","/assets/better_acceuil.css","/assets/emploie_betterStyle.css","/assets/examen_betterStyle.css"]
     }
   ],
 

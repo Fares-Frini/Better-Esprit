@@ -1,12 +1,12 @@
 
 tbody
 {
-    border: solid 10px #051923;
+    border: solid 10px #333333;
     border-radius: 10px !important;
 }
 .shine
 {
-    animation: last infinite 2s ;
+    animation: last infinite 1.5s ;
         padding: 3px;
         border-radius: 3px;        
         padding:  3px;
@@ -18,7 +18,7 @@ tbody
 {
     0%
     {
-        background-color: #CC0000;
+        background-color: #8c1c13;
     }
     50%
     {
@@ -27,7 +27,7 @@ tbody
     }
     100%
     {
-        background-color: #CC0000;
+        background-color: #8c1c13;
     }
 }
 .download
