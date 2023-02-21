@@ -6,53 +6,64 @@
     <script src="/popup/popup.js"></script>
   </head>
   <body>
-    <div id="preloader"><img src="/img/BE_fulllogo.png" id="fulllogo" alt="" /></div>
+    <div id="preloader">
+      <img src="/img/BE_fulllogo.png" id="fulllogo" alt="" />
+    </div>
     <div class="header">
       <img src="/img/logo_esprit.png" alt="" />
-      <table>
-        <tr id="case">
+      <table id="table">
+        <tr>
           <td align="center">
-            <a href="popup.html"><img src="/img/home.png" id="icon" alt="" /></a>
+            <a href="#acceuil"
+              ><img src="/img/home.png" id="icon" alt=""
+            /></a>
           </td>
           <td align="center">
-            <a href="calander.html"
+            <a href="#calender"
               ><img src="/img/calendar.png" id="icon" alt=""
             /></a>
           </td>
         </tr>
       </table>
-      <table style="margin-left:50px";>
+      </div>
+      <div id="acceuil">
+      <table style="margin-left: 50px" ;>
         <tr>
           <td>
             <label class="switch">
-                <input id="BetterMoyenneCheckbox" type="checkbox"/>
-                <span class="slider"></span>
-              </label>
+              <input id="BetterMoyenneCheckbox" type="checkbox" />
+              <span class="slider"></span>
+            </label>
           </td>
           <td><h2>Better Moyenne</h2></td>
         </tr>
         <tr>
-            <td>
-                <label class="switch">
-                    <input id="DarkModeCheckbox" type="checkbox" />
-                    <span class="slider"></span>
-                  </label>
-            </td>
-            <td><h2>Better Dark Mode</h2></td>
+          <td>
+            <label class="switch">
+              <input id="DarkModeCheckbox" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </td>
+          <td><h2>Better Dark Mode</h2></td>
         </tr>
         <tr>
-            <td>
-                <label class="switch">
-                    <input id="BetterDisplayCheckbox" type="checkbox" />
-                    <span class="slider"></span>
-                  </label>
-            </td>
-            <td>
-                <h2>Better Display  </h2>
-            </td>
+          <td>
+            <label class="switch">
+              <input id="BetterDisplayCheckbox" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </td>
+          <td>
+            <h2>Better Display</h2>
+          </td>
         </tr>
       </table>
-      
     </div>
+    <div id="calender"></div>
+    <iframe
+      src="https://firebasestorage.googleapis.com/v0/b/better-esprit.appspot.com/o/emploie.pdf?alt=media&token=9173c10c-071b-4601-a34d-1004d56404e7#page=167&toolbar=0&zoom=fit"
+      frameborder="0"
+      id="emploie"
+    ></iframe>
   </body>
 </html>

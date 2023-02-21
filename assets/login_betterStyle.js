@@ -56,7 +56,7 @@ const inptdiv=document.getElementById("ContentPlaceHolder1_Panel2");
 
     //integrate title 
     const titlec=document.createElement("h2");
-    const titlecnode = document.createTextNode("COUR DU JOUR");
+    const titlecnode = document.createTextNode("COURS DU JOUR");
     titlec.appendChild(titlecnode);
     html[0].appendChild(titlec);
     titlec.classList.add("titlec");
@@ -80,6 +80,14 @@ const inptdiv=document.getElementById("ContentPlaceHolder1_Panel2");
     title.appendChild(titlenode);
     inptdiv.insertBefore(title,inptdiv.firstChild);
     title.classList.add("title");
+
+    //integrate cr
+    const cr=document.createElement("a");
+    const crnode = document.createTextNode("B.E");
+    cr.appendChild(crnode);
+    html[0].appendChild(cr);
+    cr.classList.add("cr");
+    cr.href="https://github.com/Fares-Frini/Better-Esprit";
     
 }
 

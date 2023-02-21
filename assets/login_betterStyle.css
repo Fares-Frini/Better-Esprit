@@ -176,3 +176,23 @@
   top: 50px;
   font-weight: bold;
 }
+.cr
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgb(66, 56, 56) !important;
+  border-radius: 0 0 0 10px;
+  font-size: 2.5em;
+  padding: 5px;
+  font-weight: bold;
+  color: #919191 !important;
+  transition: 0.4s ;
+}
+.cr:hover
+{
+  text-decoration: none;
+  background-color: #919191 !important;
+  color: white !important;
+}

@@ -25,3 +25,9 @@
   :heavy_check_mark: background color fix <br>
   :heavy_check_mark: login style fix <br>
   :heavy_check_mark: last and new shin fix <br>
+
+  # Beta 5.0
+  :heavy_check_mark: Total overhaul of the Login Page login <br>
+  # Beta 5.1
+  :heavy_check_mark: Button link to Github Added <br>
+  :heavy_check_mark: Fix popup scroll and transition <br>

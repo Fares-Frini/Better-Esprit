@@ -1,9 +1,19 @@
+*{scroll-behavior: smooth;}
 body {
   width: 500px;
-  height: 600px;
+  height: 1200px;
   overflow: hidden; /* Hide scrollbars */
   margin: 0px;
-  background: linear-gradient(#180002, #2d0006, #180002);
+  background: -webkit-linear-gradient(
+    to top,
+    #6f0000,
+    #200122
+  );
+  background: linear-gradient(
+    to top,
+    #6f0000,
+    #200122
+  );
   font-family:"Calibri (Body)";
 }
 
@@ -13,9 +23,9 @@ body {
 }
 .header {
   width: 500px;
-
+position: fixed;
   height: 150px;
-  background: linear-gradient(#be0202, #a30000, #be0202);
+  background-color: #be0313;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -23,6 +33,7 @@ body {
 
   flex-direction: column;
   flex: 1 100px;
+  z-index: 2;
 }
 .header img {
   width: 200px;
@@ -45,16 +56,9 @@ body table {
 }
 #icon {
   width: 50px;
-  transform: 0.5s;
 }
-#icon:hover {
-  background-color: #ff6663;
-  padding: 10px;
-  transition: 1s;
-}
+
 #icon {
-  transform: translate(-50%, -50%);
-  border: 2px solid white;
   text-decoration: none;
   transform: 1s;
   padding: 10px;
@@ -149,3 +153,28 @@ h2
    font-family: "Gill Sans", sans-serif;
 }  
   
+#table tr td
+{
+  border-top: 2px solid black;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  background-color: #be0313;
+}
+#table tr td:active
+{
+  background-color: #a30000;
+}
+#table
+{
+  margin: 0;
+  padding: 0;
+}
+#calender {
+ position: inherit;
+}
+#acceuil
+{
+  padding-top: 150px;
+  height: 600px;
+}
